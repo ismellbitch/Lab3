@@ -46,5 +46,13 @@ namespace Lab3
         {
             return new Complex(this.A, -this.B);
         }
+        public override string? ToString()
+        {
+            if(B>0)
+                return A+"+"+B+"i";
+            else if(B<0)
+                return A + "-" + Math.Abs(B) + "i";
+            return A.ToString();
+        }
     }
 }
