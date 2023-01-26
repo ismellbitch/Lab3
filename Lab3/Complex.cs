@@ -29,7 +29,8 @@ namespace Lab3
 
         public IPair Div(IPair p)
         {
-            return new Complex((this.A * p.A + this.B * p.B) / (Math.Pow(p.A, 2) + Math.Pow(p.B, 2)), (this.B * p.A - this.A * this.B) / (Math.Pow(p.A, 2) + Math.Pow(p.B, 2)));
+            return new Complex((this.A * p.A + this.B * p.B) / (Math.Pow(p.A, 2) + Math.Pow(p.B, 2)),
+                (this.B * p.A - this.A * this.B) / (Math.Pow(p.A, 2) + Math.Pow(p.B, 2)));
         }
 
         public IPair Mul(IPair p)
