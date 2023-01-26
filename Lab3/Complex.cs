@@ -46,9 +46,5 @@ namespace Lab3
         {
             return new Complex(this.A, -this.B);
         }
-        public string? ToString()
-        {
-            return this.A + "+" + this.B + "i";
-        }
     }
 }
